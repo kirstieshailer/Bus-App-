@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rugby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <script>src="java.js"</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            ul {
+                display: none;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    $("#list1").slideToggle();
+                });
+                $("#button2").click(function(){
+                    $("#list2").slideToggle();
+                });
+                $("#button3").click(function(){
+                    $("#list3").slideToggle();
+                });
+                $("#button4").click(function(){
+                    $("#list4").slideToggle();
+                });
+                $("#button5").click(function(){
+                    $("#list5").slideToggle();
+                });
+                $("#button6").click(function(){
+                    $("#list6").slideToggle();
+                });
+                $("#button7").click(function(){
+                    $("#list7").slideToggle();
+                });
+                $("#button8").click(function(){
+                    $("#list8").slideToggle();
+                });
+                $("#button9").click(function(){
+                    $("#list9").slideToggle();
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <script src="menu.js"></script>
+            <header>
+                <!--links the back arrow the the pervious page-->
+                <a href="search-by-route.html"><img id=arrow src="back-arrow.png" alt="back"></a>
+                <!--Heading of the page with padding to make the word center-->
+                <h1 style="padding-left: 20vw">Rugby </h1>
+            </header>
+        <!--class for the image with the image embedded inside-->
+            <div class="map">
+                <img src="map-rugby.jpg" id="map" alt="highlighted">
+            </div>
+            <br>
+            <br>
+            <main>
+                <!--List to display the times the bus departs the terminals triggured by java script-->
+                <div class="box depart-main-st-terminal" id="button1"><h3>Depart main st terminal</h3></div>
+                    <div class="time">
+                        <ul id="list1">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:40 AM</li>
+                            <li>7:20 AM</li>
+                            <li>8:00 AM</li>
+                            <li>8:40 AM</li>
+                            <li>9:40 AM</li>
+                            <li>11:00 AM</li>
+                            <li>12:20 PM</li>
+                            <li>1:40 PM</li>
+                            <li>3:00 PM</li>
+                            <li>3:40 PM</li>
+                            <li>4:20 PM</li>
+                            <li>5:00 PM</li>
+                            <li>5:40 PM</li>
+                            <li>6:40 PM (Friday only)</li>
+                            <li>8:20 PM (Home Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:20 AM</li>
+                            <li>1:40 PM</li>
+                            <li>4:20 PM (Home only)</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:20 AM</li>
+                            <li>3:40 PM</li>
+                            <li>4:20 PM (Home only)</li>
+                        </ul>
+                    </div>
+                <div class="box west-st" id="button2"><h3>West St (59)</h3></div>
+                    <div class="time">
+                        <ul id="list2">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:46 AM</li>
+                            <li>7:26 AM</li>
+                            <li>8:06 AM</li>
+                            <li>8:46 AM</li>
+                            <li>9:46 AM</li>
+                            <li>11:06 AM</li>
+                            <li>12:26 PM</li>
+                            <li>1:46 PM</li>
+                            <li>3:06 PM</li>
+                            <li>3:46 PM</li>
+                            <li>4:26 PM</li>
+                            <li>5:06 PM</li>
+                            <li>5:46 PM</li>
+                            <li>6:46 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:26 AM</li>
+                            <li>1:46 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:26 AM</li>
+                            <li>3:46 PM</li>
+                        </ul>
+                    </div>
+                <div class="box rugby-st" id="button3"><h3>Rugby St (95)</h3></div>
+                    <div class="time">
+                        <ul id="list3">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:49 AM</li>
+                            <li>7:29 AM</li>
+                            <li>8:09 AM</li>
+                            <li>8:49 AM</li>
+                            <li>9:49 AM</li>
+                            <li>11:09 AM</li>
+                            <li>12:29 PM</li>
+                            <li>1:49 PM</li>
+                            <li>3:09 PM</li>
+                            <li>3:49 PM</li>
+                            <li>4:29 PM</li>
+                            <li>5:09 PM</li>
+                            <li>5:49 PM</li>
+                            <li>6:49 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:29 AM</li>
+                            <li>1:49 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:29 AM</li>
+                            <li>3:49 PM</li>
+                        </ul>
+                    </div>
+                <div class="box college-st" id="button4"><h3>College St (43)</h3></div>
+                    <div class="time">
+                        <ul id="list4">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:52 AM</li>
+                            <li>7:32 AM</li>
+                            <li>8:12 AM</li>
+                            <li>8:52 AM</li>
+                            <li>9:52 AM</li>
+                            <li>11:12 AM</li>
+                            <li>12:32 PM</li>
+                            <li>1:52 PM</li>
+                            <li>3:12 PM</li>
+                            <li>3:52 PM</li>
+                            <li>4:32 PM</li>
+                            <li>5:12 PM</li>
+                            <li>5:52 PM</li>
+                            <li>6:52 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:32 AM</li>
+                            <li>1:52 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:32 AM</li>
+                            <li>3:52 PM</li>
+                        </ul>
+                    </div>
+                <div class="box maxwells-line" id="button5"><h3>Maxwells Line (157)</h3></div>
+                    <div class="time">
+                        <ul id="list5">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:55 AM</li>
+                            <li>7:35 AM</li>
+                            <li>8:15 AM</li>
+                            <li>8:55 AM</li>
+                            <li>9:55 AM</li>
+                            <li>11:15 AM</li>
+                            <li>12:35 PM</li>
+                            <li>1:55 PM</li>
+                            <li>3:15 PM</li>
+                            <li>3:55 PM</li>
+                            <li>4:35 PM</li>
+                            <li>5:15 PM</li>
+                            <li>5:55 PM</li>
+                            <li>6:55 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:35 AM</li>
+                            <li>1:55 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:35 AM</li>
+                            <li>3:55 PM</li>
+                        </ul>
+                    </div>
+                <div class="box pitama-rd" id="button6"><h3>Pitama Rd (76)</h3></div>
+                    <div class="time">
+                        <ul id="list6">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:58 AM</li>
+                            <li>7:38 AM</li>
+                            <li>8:18 AM</li>
+                            <li>8:58 AM</li>
+                            <li>9:58 AM</li>
+                            <li>11:18 AM</li>
+                            <li>12:38 PM</li>
+                            <li>1:58 PM</li>
+                            <li>3:18 PM</li>
+                            <li>3:58 PM</li>
+                            <li>4:38 PM</li>
+                            <li>5:18 PM</li>
+                            <li>5:58 PM</li>
+                            <li>6:58 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:38 AM</li>
+                            <li>1:58 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:38 AM</li>
+                            <li>3:58 PM</li>
+                        </ul>
+                    </div>
+                <div class="box botanical-rd" id="button7"><h3>Botanical Rd (West End Sch)</h3></div>
+                    <div class="time">
+                        <ul id="list7">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:02 AM</li>
+                            <li>7:42 AM</li>
+                            <li>8:22 AM</li>
+                            <li>9:02 AM</li>
+                            <li>10:02 AM</li>
+                            <li>11:22 AM</li>
+                            <li>12:42 PM</li>
+                            <li>2:02 PM</li>
+                            <li>3:22 PM</li>
+                            <li>4:02 PM</li>
+                            <li>4:42 PM</li>
+                            <li>5:22 PM</li>
+                            <li>6:02 PM</li>
+                            <li>7:02 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:42 AM</li>
+                            <li>2:02 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:42 AM</li>
+                            <li>4:02 PM</li>
+                        </ul>
+                    </div>
+                <div class="box park-rd" id="button8"><h3>Park Rd (151)</h3></div>
+                    <div class="time">
+                        <ul id="list8">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:05 AM</li>
+                            <li>7:45 AM</li>
+                            <li>8:25 AM</li>
+                            <li>9:05 AM</li>
+                            <li>10:05 AM</li>
+                            <li>11:25 AM</li>
+                            <li>12:45 PM</li>
+                            <li>2:05 PM</li>
+                            <li>3:25 PM</li>
+                            <li>4:05 PM</li>
+                            <li>4:45 PM</li>
+                            <li>5:25 PM</li>
+                            <li>6:05 PM</li>
+                            <li>7:05 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:45 AM</li>
+                            <li>2:05 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:45 AM</li>
+                            <li>4:05 PM</li>
+                        </ul>
+                    </div>
+                <div class="box arrive-main-st-terminal" id="button9"><h3>Arrive main st terminal</h3></div>
+                    <div class="time">
+                        <ul id="list9">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:15 AM</li>
+                            <li>7:55 AM</li>
+                            <li>8:35 AM</li>
+                            <li>9:15 AM</li>
+                            <li>10:15 AM</li>
+                            <li>11:35 AM</li>
+                            <li>12:55 PM</li>
+                            <li>2:15 PM</li>
+                            <li>3:35 PM</li>
+                            <li>4:15 PM</li>
+                            <li>4:55 PM</li>
+                            <li>5:35 PM</li>
+                            <li>6:15 PM</li>
+                            <li>7:15 PM (Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:55 AM</li>
+                            <li>2:15 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>10:55 AM</li>
+                            <li>4:15 PM</li>
+                        </ul>
+                    </div>
+            </main>
+                <!--Puts the image sorce at the bottom of the page for reference to the user-->
+            <footer>
+                Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </footer>
+    </body>
+</html>

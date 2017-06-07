@@ -1,0 +1,350 @@
+ /*This is the desktop version design*/
+@media (min-width: 600px) {
+/*Changes the font of everything in the body tag, makes the background colour white, also makes sure there is no padding.*/
+    body{
+        background-color: white;
+        font-family: "Myriad Pro";
+        margin:0px;
+        padding:0px;
+    }
+/*Makes all background colours of h1 tags the Horizons lime green and aligns the text to center.*/
+    h1 {
+        background-color: #c1d72f;
+        margin:0px;
+        padding:0px;
+        text-align: center;
+    }
+/*Makes the text size to a respectible size for the heading and changed the colour of the writing to the Horizons blue*/
+    h2{
+        font-size: 20px;
+        color: #0093d0
+    }
+/*The next 4 heading tags are all different sizes for the text so that the sizes are apropriate*/
+    h3 {
+        font-size: 6vw
+    }
+    h4 {
+        font-size: 5vw;
+    }
+    h5 {
+        font-size: 1.5vw;
+    }
+    h6 {
+        font-size: 2.5vw
+    }
+/*Created no bullet points infront of the lists, also displays the lists to look like a row in a table without the lines. (lined up vertically undreneathe each other)*/
+    ul {
+        list-style-type: none;
+        display: table-row;
+    }
+/*Changed the font size of the p (paragraph) tags to 12px so that the writing is small as they are only notes for the user*/
+    p {
+        font-size: 12px
+    }
+/*makes the background colour of the header to the lime green of horizens, makes all content in the header on one line and adds a small, solid border in the horizens blue*/
+    header {
+        display: flex;
+        background-color: #c1d72f;
+        border: solid 1px #0093d0
+    }
+/*Controls the look of all linking symbols/words to have no decoration (underline) and for the text to be black*/
+    a {
+        text-decoration: none;
+        color: black;
+    }
+/*created a hover effect when the linking symbols/words have the courser hovering over them giving an unserline of the word and keeping the text colour black*/
+    a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+/*adjusts the size of the places where you write your input and adjusts the font size of the writing that will be entered*/
+    input {
+        height: 5vw;
+        width: 17vw;
+        font-size: 3vw;
+    }
+/*takes away the border of the whole table and makes the table be spread across the entire page*/
+    table {
+        border-collapse: collapse;
+        width:100%;
+    }
+/*adds a border to the data that is in the table making all of the data visually pleasing, aligns the text to the left hand orientation and adds padding so that the table is easier to read*/
+    td {
+        border: 1px solid #231f20;
+        text-align: left;
+        padding: 8px;
+    }
+/*aligns the table heading to the left with padding so that it is easier to read, then chanhes the colours so that it has a blue background wtith white writing*/
+    th {
+        text-align: left;
+        padding: 8px;
+        background-color: #0093d0;
+        color: white
+    }
+/*Makes the navigation bar be grouped together so it is all aligned, adds space between each button and padding so that the buttons align with the logo in the corner, changed the background colour to the lime green*/
+    nav {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 2vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 2vw;
+        background-color: #c1d72f;
+        width: 99vw;
+    }
+/*Changes the hover effect on the navigation bar so that when the mouse hovers over the button it has a blue background with white writing, also with no underline*/
+    nav a:hover {
+        background-color: #0093d0;
+        color: white;
+        text-decoration: none;
+    }
+/*Adjusts the size of the images so that they are the right size to be visually pleasing*/
+    #map {
+        width: 50vw;
+    }
+    #bus-logo{
+        width: 7vw ;
+        height: 7vw ;
+    }
+    #bus {
+        width: 99vw;
+    }
+/*Makes it so that the images are not seen when in the web version of the app*/
+    #search, #pinpoint {display:none;}
+/*adjusts the content in the div classes so that they are aligned correctly*/
+    .from {
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .to {
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw
+    }
+    .to-from {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 50vw;
+        height: 22vw;
+        text-align: center;
+    }
+
+    .routes {
+        background-color: white;
+        height: 135vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+/*Makes the image/text not display itn the display whilst in the web version*/
+    .announcements1, .bus-logo1 {display:none;}
+}
+
+
+/*This is the mobile version design*/
+@media (max-width: 599px) {
+/*Changes the font of everything in the body tag, makes the background colour white, also makes sure there is no padding.*/
+    body {
+        background-color: white;
+        Padding: 0px;
+        font-family: "Myriad Pro";
+    }
+/*Makes all background colours of h1 tags the Horizons lime green and aligns the text to center.*/
+    h1 {
+        background-color: #c1d72f;
+        margin:0px;
+        padding:0px;
+        text-align: center;
+    }
+/*Makes the colour of the writing to the Horizons blue*/
+    h2 {
+        color: #0093d0
+    }
+/*The next 4 heading tags are all different sizes for the text so that the sizes are apropriate*/
+    h3 {
+        font-size: 6vw
+    }
+    h4 {
+        font-size: 7vw;
+    }
+    h5 {
+        font-size: 6vw;
+    }
+    h6{
+        font-size: 5vw;
+    }
+/*Changed the font size of the p (paragraph) tags to 12px so that the writing is small as they are only notes for the user*/
+    p {
+        font-size: 12px;
+    }
+/*Created no bullet points infront of the lists, also displays the lists to look like a row in a table without the lines. (lined up vertically undreneathe each other)*/
+    ul {
+        list-style-type: none;
+        display: table-row;
+    }
+/*makes so that when in the mobile version. anything with the section tag will no display*/
+    section {
+        display: none;
+    }
+/*makes the background colour of the header to the lime green of horizens, makes all content in the header on one line and adds a small, solid border in the horizens blue*/
+    header {
+        display: flex;
+        background-color: #c1d72f;
+        border: solid 1px #0093d0
+    }
+/*Controls the look of all linking symbols/words to have no decoration (underline) and for the text to be black*/
+    a {
+        text-decoration: none;
+        color: black;
+    }
+/*created a hover effect when the linking symbols/words have the courser hovering over them giving an unserline of the word and keeping the text colour black*/
+    a:hover {
+        text-decoration: underline;
+    }
+/*adjusts the size of the places where you write your input and adjusts the font size of the writing that will be entered*/
+    input {
+        height: 5vw;
+        width: 50vw;
+        font-size: 3vw;
+    }
+/*Makes the navigation bar be grouped together so it is all aligned, aligns all the text to be center changed the background colour to the lime green*/
+    nav {
+        display:flex;
+        flex-wrap: wrap;
+        background-color: #c1d72f;
+        text-align: center;
+    }
+/*adds a border to each button and makes the buttons fit nicley on the page*/
+    nav a {
+        border: solid 1px #0093d0;
+        width:49.4%;
+    }
+/*Changes the hover effect on the navigation bar so that when the mouse hovers over the button it has a blue background with white writing, also with no underline*/
+    nav a:hover {
+        background-color: #0093d0;
+        color: white;
+        text-decoration: none;
+    }
+/*takes away the border of the whole table and makes the table be spread across the entire page*/
+    table {
+        border-collapse: collapse;
+        width:100%;
+    }
+/*adds a border to the data that is in the table making all of the data visually pleasing, aligns the text to the left hand orientation and adds padding so that the table is easier to read*/
+    td {
+        border: 1px solid #231f20;
+        text-align: left;
+        padding: 8px;
+    }
+/*aligns the table heading to the left with padding so that it is easier to read, then chanhes the colours so that it has a blue background wtith white writing*/
+    th {
+        text-align: left;
+        padding: 8px;
+        background-color: #0093d0;
+        color: white
+    }
+/*Adjusts the size and padding of the images so that they are the right size to be visually pleasing*/
+    #map {
+        width: 96vw;
+    }
+     #search, #pinpoint {
+        height: 10vw;
+        padding-left:2vw;
+    }
+    #bus-logo {
+        width: 50vw;
+    }
+    #add {
+        width:60px;
+    }
+/*Makes it so that the images are not seen when in the mobile version of the app*/
+    #bus {
+        display: none;
+    }
+/*adjusts the content in the div classes so that they are aligned correctly*/
+    .from {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .to {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: center;
+         align-items: center;
+    }
+    .box {
+        width: 100vw;
+        height: 22vw;
+        text-align: center;
+        background-color: #c1d72f
+    }
+    .inner-bottom {
+        height: 1000vw;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .routes {
+        background-color: white;
+        height: 260vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+/*Makes the image/text not display itn the display whilst in the mobile version*/
+    .announcements2, .bus-logo2 {display:none;}
+    .announcements1, .bus-logo1 {
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+    }
+    .add-new {
+        background-color: #c1d72f;
+        display: flex;
+        justify-content: space-between
+    }
+
+}
+
+
+/*makes the buttons have a blue background with green borders*/
+.information {
+    background-color: #0093d0;
+    border: solid 1px #c1d72f;
+    width: 100vw
+}
+.fare-information, .urban-bus, .faq {border: solid 1px #c1d72f;}
+/*sets the background colour of all routes to be the correct colour to the corosponding route according to Horizens information*/
+.awapuni {background-color: #F69238}
+.rugby {background-color: #009E57}
+.highbury {background-color: #00AEEF}
+.takaro {background-color: #EE1B2D}
+.cloverlea {background-color: #873C96}
+.milson {background-color: #EF59A1}
+.rhodes {background-color: #0153A0}
+.roslyn {background-color: #C6870E}
+.rangiora {background-color: #005040}
+.brightwater {background-color: #FBB555}
+.fernlea {background-color: #038793}
+.heights {background-color: #F0563B}
+
+/*afjusts the font size of the footer to be small and the content to be in the center of the page also spaced down from the other content on the page.*/
+footer {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10vw
+}
+main {
+    display:flex;
+    flex-wrap: wrap;
+}

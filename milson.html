@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Milson</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <script>src="java.js"</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <Style>
+            ul {
+                display: none;
+            }
+            </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    $("#list1").slideToggle();
+                });
+                $("#button2").click(function(){
+                    $("#list2").slideToggle();
+                });
+                $("#button3").click(function(){
+                    $("#list3").slideToggle();
+                });
+                $("#button4").click(function(){
+                    $("#list4").slideToggle();
+                });
+                $("#button5").click(function(){
+                    $("#list5").slideToggle();
+                });
+                $("#button6").click(function(){
+                    $("#list6").slideToggle();
+                });
+                $("#button7").click(function(){
+                    $("#list7").slideToggle();
+                });
+                $("#button8").click(function(){
+                    $("#list8").slideToggle();
+                });
+                $("#button9").click(function(){
+                    $("#list9").slideToggle();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <!--links the back arrow the the pervious page-->
+                <a href="search-by-route.html"><img id=arrow src="back-arrow.png" alt="back"></a>
+            <!--Heading of the page with padding to make the word center-->
+                <h1 style="padding-left:20vw;">Milson</h1>
+        </header>
+        <!--class for the image with the image embedded inside-->
+            <div class="map">
+                <img src="map-milson.jpg" id="map" alt="highlighted">
+            </div>
+            <br>
+            <br>
+            <main>
+                <!--List to display the times the bus departs the terminals triggured by java script-->
+                <div class="box depart-main-st-terminal" id="button1"><h3>Depart main st terminal</h3></div>
+                    <div class="time">
+                        <ul id="list1">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:50 AM</li>
+                            <li>7:10 AM</li>
+                            <li>7:30 AM</li>
+                            <li>7:50 AM</li>
+                            <li>8:10 AM</li>
+                            <li>8:30 AM</li>
+                            <li>8:50 AM</li>
+                            <li>9:40 AM</li>
+                            <li>11:00 AM</li>
+                            <li>12:20 PM</li>
+                            <li>1:40 PM</li>
+                            <li>3:00 PM</li>
+                            <li>3:20 PM</li>
+                            <li>3:40 PM</li>
+                            <li>4:00 PM</li>
+                            <li>4:20 PM</li>
+                            <li>4:40 PM</li>
+                            <li>5:00 PM</li>
+                            <li>5:20 PM</li>
+                            <li>5:40 PM</li>
+                            <li>6:00 PM</li>
+                            <li>8:20 PM (Home Friday only)</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:40 AM</li>
+                            <li>12:20 PM</li>
+                            <li>3:40 PM</li>
+                            <li>4:20 PM (Home only)</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:00 AM</li>
+                            <li>4:20 PM (Home only)</li>
+                        </ul>
+                    </div>
+                <div class="box ruahine-st" id="button2"><h3>Ruahine St (202)</h3></div>
+                    <div class="time">
+                        <ul id="list2">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>6:55 AM</li>
+                            <li>7:15 AM</li>
+                            <li>7:35 AM</li>
+                            <li>7:55 AM</li>
+                            <li>8:15 AM</li>
+                            <li>8:35 AM</li>
+                            <li>8:55 AM</li>
+                            <li>9:45 AM</li>
+                            <li>11:05 AM</li>
+                            <li>12:25 PM</li>
+                            <li>1:45 PM</li>
+                            <li>3:05 PM</li>
+                            <li>3:25 PM</li>
+                            <li>3:45 PM</li>
+                            <li>4:05 PM</li>
+                            <li>4:25 PM</li>
+                            <li>4:45 PM</li>
+                            <li>5:05 PM</li>
+                            <li>5:25 PM</li>
+                            <li>5:45 PM</li>
+                            <li>6:05 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:45 AM</li>
+                            <li>12:25 PM</li>
+                            <li>3:45 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:05 AM</li>
+                        </ul>
+                    </div>
+                <div class="box langley-ave" id="button3"><h3>Langley Ave (70)</h3></div>
+                    <div class="time">
+                        <ul id="list3">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:00 AM</li>
+                            <li>7:20 AM</li>
+                            <li>7:40 AM</li>
+                            <li>8:00 AM</li>
+                            <li>8:20 AM</li>
+                            <li>8:40 AM</li>
+                            <li>9:00 AM</li>
+                            <li>9:50 AM</li>
+                            <li>11:10 AM</li>
+                            <li>12:30 PM</li>
+                            <li>1:50 PM</li>
+                            <li>3:10 PM</li>
+                            <li>3:30 PM</li>
+                            <li>3:50 PM</li>
+                            <li>4:10 PM</li>
+                            <li>4:30 PM</li>
+                            <li>4:50 PM</li>
+                            <li>5:10 PM</li>
+                            <li>5:30 PM</li>
+                            <li>5:50 PM</li>
+                            <li>6:10 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:50 AM</li>
+                            <li>12:30 PM</li>
+                            <li>3:50 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:10 AM</li>
+                        </ul>
+                    </div>
+                <div class="box bennett-st" id="button4"><h3>Bennett St (7)</h3></div>
+                    <div class="time">
+                        <ul id="list4">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:03 AM</li>
+                            <li>7:23 AM</li>
+                            <li>7:43 AM</li>
+                            <li>8:03 AM</li>
+                            <li>8:23 AM</li>
+                            <li>8:43 AM</li>
+                            <li>9:03 AM</li>
+                            <li>9:53 AM</li>
+                            <li>11:13 AM</li>
+                            <li>12:33 PM</li>
+                            <li>1:53 PM</li>
+                            <li>3:13 PM</li>
+                            <li>3:33 PM</li>
+                            <li>3:53 PM</li>
+                            <li>4:13 PM</li>
+                            <li>4:33 PM</li>
+                            <li>4:53 PM</li>
+                            <li>5:13 PM</li>
+                            <li>5:33 PM</li>
+                            <li>5:53 PM</li>
+                            <li>6:13 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:53 AM</li>
+                            <li>12:33 PM</li>
+                            <li>3:53 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:13 AM</li>
+                        </ul>
+                    </div>
+                <div class="box bennet-st" id="button5"><h3>Bennet st (4)</h3></div>
+                    <div class="time">
+                        <ul id="list5">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:05 AM</li>
+                            <li>7:25 AM</li>
+                            <li>7:45 AM</li>
+                            <li>8:05 AM</li>
+                            <li>8:25 AM</li>
+                            <li>8:45 AM</li>
+                            <li>9:05 AM</li>
+                            <li>9:55 AM</li>
+                            <li>11:15 AM</li>
+                            <li>12:35 PM</li>
+                            <li>1:55 PM</li>
+                            <li>3:15 PM</li>
+                            <li>3:35 PM</li>
+                            <li>3:55 PM</li>
+                            <li>4:15 PM</li>
+                            <li>4:35 PM</li>
+                            <li>4:55 PM</li>
+                            <li>5:15 PM</li>
+                            <li>5:35 PM</li>
+                            <li>5:55 PM</li>
+                            <li>6:15 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:55 AM</li>
+                            <li>12:35 PM</li>
+                            <li>3:55 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:15 AM</li>
+                        </ul>
+                    </div>
+                <div class="box benmore-ave" id="button6"><h3>Benmore Ave (26)</h3></div>
+                    <div class="time">
+                        <ul id="list6">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:08 AM</li>
+                            <li>7:28 AM</li>
+                            <li>7:48 AM</li>
+                            <li>8:08 AM</li>
+                            <li>8:28 AM</li>
+                            <li>8:48 AM</li>
+                            <li>9:08 AM</li>
+                            <li>9:58 AM</li>
+                            <li>11:18 AM</li>
+                            <li>12:38 PM</li>
+                            <li>1:58 PM</li>
+                            <li>3:18 PM</li>
+                            <li>3:38 PM</li>
+                            <li>3:58 PM</li>
+                            <li>4:18 PM</li>
+                            <li>4:38 PM</li>
+                            <li>4:58 PM</li>
+                            <li>5:18 PM</li>
+                            <li>5:38 PM</li>
+                            <li>5:58 PM</li>
+                            <li>6:18 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>9:58 AM</li>
+                            <li>12:38 PM</li>
+                            <li>3:58 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:18 AM</li>
+                        </ul>
+                    </div>
+                <div class="box tremaine-ave" id="button7"><h3>Tremaine Ave (375)</h3></div>
+                    <div class="time">
+                        <ul id="list7">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:11 AM</li>
+                            <li>7:31 AM</li>
+                            <li>7:51 AM</li>
+                            <li>8:11 AM</li>
+                            <li>8:31 AM</li>
+                            <li>8:51 AM</li>
+                            <li>9:11 AM</li>
+                            <li>10:01 AM</li>
+                            <li>11:21 AM</li>
+                            <li>12:41 PM</li>
+                            <li>1:51 PM</li>
+                            <li>3:21 PM</li>
+                            <li>3:41 PM</li>
+                            <li>4:01 PM</li>
+                            <li>4:21 PM</li>
+                            <li>4:41 PM</li>
+                            <li>5:01 PM</li>
+                            <li>5:21 PM</li>
+                            <li>5:41 PM</li>
+                            <li>6:01 PM</li>
+                            <li>6:21 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:01 AM</li>
+                            <li>12:41 PM</li>
+                            <li>4:01 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:21 AM</li>
+                        </ul>
+                    </div>
+                <div class="box featherston-st" id="button8"><h3>Featherston St (101)</h3></div>
+                    <div class="time">
+                        <ul id="list8">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:14 AM</li>
+                            <li>7:34 AM</li>
+                            <li>7:54 AM</li>
+                            <li>8:14 AM</li>
+                            <li>8:34 AM</li>
+                            <li>8:54 AM</li>
+                            <li>9:14 AM</li>
+                            <li>10:04 AM</li>
+                            <li>11:24 AM</li>
+                            <li>12:44 PM</li>
+                            <li>1:54 PM</li>
+                            <li>3:24 PM</li>
+                            <li>3:44 PM</li>
+                            <li>4:04 PM</li>
+                            <li>4:24 PM</li>
+                            <li>4:44 PM</li>
+                            <li>5:04 PM</li>
+                            <li>5:24 PM</li>
+                            <li>5:44 PM</li>
+                            <li>6:04 PM</li>
+                            <li>6:24 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:04 AM</li>
+                            <li>12:44 PM</li>
+                            <li>4:04 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:24 AM</li>
+                        </ul>
+                    </div>
+                <div class="box arrive-main-st-terminal" id="button9"><h3>Arrive main st terminal</h3></div>
+                    <div class="time">
+                        <ul id="list9">
+                            <li><h6>Monday to friday</h6></li>
+                            <li>7:25 AM</li>
+                            <li>7:45 AM</li>
+                            <li>8:05 AM</li>
+                            <li>8:25 AM</li>
+                            <li>8:45 AM</li>
+                            <li>9:05 AM</li>
+                            <li>9:25 AM</li>
+                            <li>10:15 AM</li>
+                            <li>11:35 PM</li>
+                            <li>12:55 PM</li>
+                            <li>2:15 PM</li>
+                            <li>3:35 PM</li>
+                            <li>3:55 PM</li>
+                            <li>4:15 PM</li>
+                            <li>4:35 PM</li>
+                            <li>4:55 PM</li>
+                            <li>5:15 PM</li>
+                            <li>5:35 PM</li>
+                            <li>5:55 PM</li>
+                            <li>6:15 PM</li>
+                            <li>6:35 PM</li>
+                            <li><h6>Saturday</h6></li>
+                            <li>10:15 AM</li>
+                            <li>12:55 PM</li>
+                            <li>4:15 PM</li>
+                            <li><h6>Sunday</h6></li>
+                            <li>11:35 AM</li>
+                        </ul>
+                </div>
+            </main>
+                <!--Puts the image sorce at the bottom of the page for reference to the user-->
+            <footer>
+                Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </footer>
+    </body>
+</html>
