@@ -325,18 +325,18 @@
 }
 .fare-information, .urban-bus, .faq {border: solid 1px #c1d72f;}
 /*sets the background colour of all routes to be the correct colour to the corosponding route according to Horizens information*/
-.awapuni {background-color: #F69238}
-.rugby {background-color: #009E57}
-.highbury {background-color: #00AEEF}
-.takaro {background-color: #EE1B2D}
-.cloverlea {background-color: #873C96}
-.milson {background-color: #EF59A1}
-.rhodes {background-color: #0153A0}
-.roslyn {background-color: #C6870E}
-.rangiora {background-color: #005040}
-.brightwater {background-color: #FBB555}
-.fernlea {background-color: #038793}
-.heights {background-color: #F0563B}
+#awapuni {background-color: #F69238}
+#rugby {background-color: #009E57}
+#highbury {background-color: #00AEEF}
+#takaro {background-color: #EE1B2D}
+#cloverlea {background-color: #873C96}
+#milson {background-color: #EF59A1}
+#rhodes {background-color: #0153A0}
+#roslyn {background-color: #C6870E}
+#rangiora {background-color: #005040}
+#brightwater {background-color: #FBB555}
+#fernlea {background-color: #038793}
+#heights {background-color: #F0563B}
 
 /*afjusts the font size of the footer to be small and the content to be in the center of the page also spaced down from the other content on the page.*/
 footer {
@@ -347,4 +347,35 @@ footer {
 main {
     display:flex;
     flex-wrap: wrap;
+}
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.bus {
+/*    width:100vw;*/
+    font-size: 23px;
+    display:flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: center;
+}
+.stopLi {
+    list-style-type: none;
+}
+.titleLi {
+    list-style-type: none;
+}
+.timesLi {
+    list-style-type: none
+}
+
+aside {
+    height: 90vw;
+}
+
+aside #map {
+    background: blue;
+    height: 100%;
 }

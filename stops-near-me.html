@@ -4,8 +4,11 @@
         <title>Stops near me</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <meta charset="UTF-8">
-        <script>src="java.js"</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRF_rsKqaUcdXBB9yXH99aJFoiUZPvkPs"></script>
+
+<!--        <script src=shapes.js></script>-->
+
     </head>
 
     <body>
@@ -16,17 +19,30 @@
             <h1>Stops closest to you</h1>
         </header>
         <br>
-        <main>
-        <div class="map">
-            <img src="map-example.png" id=map alt="placeholder">
-        </div>
         <aside>
-            <p>Java script will show the departure and arrival times closes to the time on the phone.</p>
+            <div id="map">
+
+            </div>
         </aside>
+
+        <main>
+
         </main>
         <!--Puts the image sorce at the bottom of the page for reference to the user-->
         <footer>
             Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </footer>
+
+        <script src="bus-stops-and-times-final-NEW.js"></script>
+        <script src="bus-coordinates-NEW.js"></script>
+
+        <script src="bus-objects.js"></script>
+
+
+
+
+
+
+
     </body>
 </html>
