@@ -1,5 +1,4 @@
-var buses = [
-    "awapuni",
+var buses = ["awapuni",
     "rugby",
     "highbury",
     "takaro",
@@ -10,57 +9,41 @@ var buses = [
     "rangiora",
     "brightwater",
     "fernlea",
-    "heights",
-]
+    "heights",];
 
 
 class Bus {
-    constructor(name, stops, stopPositions, timesMonFri, timesFri, timesSat, timesSun) {
+    constructor(name, stops, stopPositions, monFriTimes, friTimes, satTimes, sunTimes) {
         this.name = name;
         this.stops = stops;
         this.stopPositions = stopPositions;
-        this.timesMonFri = timesMonFri;
-        this.timesFri = timesFri;
-        this.timesSat = timesSat;
-        this.timesSun = timesSun;
+        this.monFriTimes = monFriTimes;
+        this.friTimes = friTimes;
+        this.satTimes = satTimes;
+        this.sunTimes = sunTimes;
 
 
-        this.routeNameDOM = document.getElementById("busTitle");
-        this.stopsDOM = document.getElementById("busStops");
-        this.timesDOM = document.getElementById("busTimesMonFri")
+        this.routeNameDOM = document.getElementById("route");
+        this.stopsDOM = document.getElementById("stops");
+        this.timesDOM = document.getElementById("times");
     }
 
     //function that inserts content into DOM
 
 
-    formatStops() {
-        var content = ""
-        for(var i = 0; i < this.stops.length; i++) {
-            content += "<li class=\"stopLi\" onclick=\"routes['" +this.name+ "'].showTimes(" + i + ")\">" + this.stops[i]+ "</li>"
+    getStops() {
+        var html = '<ul>';
+        for (var i = 0; i < this.stops.length; i++) {
+            html += "<li class='busStops' onclick=\"routes[\"" +this.name.toLowerCase() + "\"].showTimes(" + i + ")'>" + this.stops[i] + "</li>";
         }
-        return content;
-    }
-
-    formatTitle() {
-        var titleWithCap = this.name.toUpperCase();
-        this.routeNameDOM.innerHTML = titleWithCap
-    }
-
-    formatTimes(index) {
-        var content = ""
-        for(var i = 0; i < this.timesMonFri.length; i++) {
-            content += "<li class=\"timesLi\">"+this.timesMonFri[i][index]+"</li>"
-        }
-        return content;
+        html += '</ul>';
+        return html;
     }
 
     showTimes(index) {
-        this.timesDOM.innerHTML = this.formatTimes(index);
-        //
-        //
-        //
-        //
-        //
+        this.routeNameDOM.innerHTML = this.name;
+        this.stopDom.innerHTML = this.busStops[index];
+        this.createMarker(index);
 
 
     }
@@ -70,21 +53,22 @@ class Bus {
             this.marker.setMap(null);
             this.marker = null;
         }
-        var stopPositions = this.stopPositions[index];
-        var stopNames = this.busStops[index];
-
-        this.marker = new google.maps.Marker ({
+        var stopPosition = this.stopPositions[index];
+        var stopName = this.busStops[index];
+        this.marker = new google.maps.Marker({
             map: map,
             position: stopPosition,
             title: stopName
         });
+
         map.setCentre(stopPosition);
         map.setZoom(15);
     }
 }
 
 var routes = {};
-for (var i = 0; i < buses.length; i++) {
+
+for (var i = 0; i < this.buses.length; i++) {
     var name = buses[i];
 
     var newRoute = new Bus(
@@ -107,45 +91,18 @@ $(document).ready(function(){
     var theSquare = {
         lat: -40.356207,
         lng: 175.610062
-    }
-    var map;
+    };
     //Create a new Map object
-//    window.map = new
-//        google.maps.Map (document.getElementById('map'), {
-//                                    center: theSquare,
-//                                    zoom: 13
-//    });
+    window.map = new google.maps.Map (document.getElementById('map'), {
+        center: theSquare,
+        zoom: 13
+    });
 
-    $(".top .bus").click(function(){
-        $("#busStops").html(routes[this.id].formatStops())
-        $("#busTitle").html(routes[this.id].formatTitle())
-    })
+    $(".stopsmenu").hide();
 
-})
+    $(".bus h2").click(function(){
+        $("#" + this.id + "Stops").html(routes[this.id].getStops());
+        $("#" + this.id + "Stops").slideToggle();
+    });
 
-//GOOGLE MAPS API
-
-//Locations
-//var cloverleaPath = new google.maps.Polyline({
-//    path: cloverleaCoordinates,
-//    geodsic: true,
-//    strokeColor: cloverlea,
-//    strokeOpacity: 1.0,
-//    strokeWidth: 2
-//});
-
-
-
-//MAPS stuff
-//function initMap() {
-//    var map = new google.maps.Map(document.getElementById('map'), {
-//      center: freybergHS,
-//      zoom: 15
-//    });
-//var marker = new google.maps.Marker({
-//    position: freybergHS,
-//    map: map
-//});
-//}
-
-
+});

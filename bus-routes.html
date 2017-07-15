@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bus Route</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
         <meta charset="UTF-8">
+        <title>Bus Routes</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRF_rsKqaUcdXBB9yXH99aJFoiUZPvkPs"></script>
     </head>
@@ -12,36 +12,89 @@
         <header>
             <!--links the back arrow the the pervious page-->
                 <a href="Index.html"><img id=arrow src="back-arrow.png" alt="arrow"></a>
+                <h1 id="title">Bus timetable</h1>
         </header>
+
         <div class="container">
-            <h1 id="busTitle">Routes</h1>
-        <div class="top">
-                <div class="bus" id="awapuni">Awapuni</div>
-                <div class="bus" id="rugby">Rugby</div>
-                <div class="bus" id="highbury">Highbury</div>
-                <div class="bus" id="takaro">Takaro</div>
-                <div class="bus" id="cloverlea">Cloverlea</div>
-                <div class="bus" id="milson">Milson</div>
-                <div class="bus" id="rhodes">Rhodes</div>
-                <div class="bus" id="roslyn">Roslyn</div>
-                <div class="bus" id="rangiora">Rangiora</div>
-                <div class="bus" id="brightwater">Brightwater</div>
-                <div class="bus" id="fernlea">Fernlea</div>
-                <div class="bus" id="heights">Heights</div>
+            <!--Menu for stops-->
+            <div class="bus">
+                <h2 id="awapuni">Awapuni</h2>
+                <h3 class ="stopsMenu" id="awapuniStops"></h3>
             </div>
-            <br>
-            <div class="middle">
-<!--                <img id="busMap">-->
+            <div class="bus">
+                <h2 id="rugby">Rugby</h2>
+                <h3 class ="stopsMenu" id="rugbyStops"></h3>
             </div>
-            <br>
-            <div class="bottom">
-                <h1 id="busStops">Stops</h1>
-                <h1 id="busTimesMonFri">Times Monday to Friday</h1>
-                <h1 id="busTimesFri">Times Friday Only</h1>
-                <h1 id="busTimesSat">Times Saturday</h1>
-                <h1 id="busTimesSun">Times Sunday</h1>
+            <div class="bus">
+                <h2 id="highbury">Highbury</h2>
+                <h3 class ="stopsMenu" id="highburyStops"></h3>
             </div>
-        </div>
+            <div class="bus">
+                <h2 id="takaro">Takaro</h2>
+                <h3 class ="stopsMenu" id="takaroStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="cloverlea">Cloverlea</h2>
+                <h3 class ="stopsMenu" id="cloverleaStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="milson">Milson</h2>
+                <h3 class ="stopsMenu" id="milsonStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="rhodes">Rhodes</h2>
+                <h3 class ="stopsMenu" id="rhodesStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="roslyn">Roslyn</h2>
+                <h3 class ="stopsMenu" id="roslynStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="rangiora">Rangiora</h2>
+                <h3 class ="stopsMenu" id="rangioraStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="brightwater">Brightwater</h2>
+                <h3 class ="stopsMenu" id="brightwaterStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="fernlea">Fernlea</h2>
+                <h3 class ="stopsMenu" id="fernleaStops"></h3>
+            </div>
+            <div class="bus">
+                <h2 id="heights">Heights</h2>
+                <h3 class ="stopsMenu" id="heightsStops"></h3>
+            </div>
+
+            <!--End menu-->
+            <!--Map area-->
+            <main>
+            <div id="map">
+                    *map goes here*
+            </div>
+            <!--END Map area-->
+
+            <!--Content area-->
+            <div id="content">
+                <div class="contentDiv">
+                    <h3>Route</h3>
+                    <h2 id="route">*Route*</h2>
+                </div>
+                <div class="contentDiv">
+                    <h3>Stops</h3>
+                    <h2 id="stops">Bus Stops</h2>
+                </div>
+                <div class="contentDiv">
+                    <h3>Next Avaliable</h3>
+                    <h2 id="NextAvaliable">Next Avaliable</h2>
+                </div>
+                <div class="contentDiv">
+                    <h3>Times of other busses</h3>
+                    <h2 id="times">Other times</h2>
+                </div>
+            </div>
+            </main>
+            <!--End content area-->
             <br>
             <br>
         <!--Puts the image sorce at the bottom of the page for reference to the user-->
