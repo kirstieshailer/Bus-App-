@@ -34,18 +34,59 @@ class Bus {
     getStops() {
         var html = '<ul>';
         for (var i = 0; i < this.stops.length; i++) {
-            html += "<li class='busStops' onclick=\"routes[\"" +this.name.toLowerCase() + "\"].showTimes(" + i + ")'>" + this.stops[i] + "</li>";
+            html += "<li class='busStops' onclick=\"routes['" +this.name.toLowerCase() + "'].showStops(" + i + ")\">" + this.stops[i] + "</li>";
         }
         html += '</ul>';
         return html;
     }
 
-    showTimes(index) {
+    getTimes(index) {
+
+        var times = '';
+
+        var date = new Date();
+//        var day = date.getDay();
+        var day = 5;
+
+        if (day == 1 || day == 2 || day == 3 || day == 4) {
+         day =  this.monFriTimes;
+        } else if (day == 5) {
+            var friO = [];
+            friO = this.friTimes
+
+            var fri = [];
+            fri = this.monFriTimes
+
+            var day =  fri.concat(friO);
+            console.log(day)
+        }else if (day == 6) {
+            var day = this.satTimes;
+        }else {
+            var day = this.sunTimes;
+        }
+
+        for (var i = 0; i < day.length; i++) {
+            if (day[i][index] == null || day[i][index] == undefined){
+                times += ""
+            }
+            else {
+            times += "<li class='tinmesRow'>" + day[i][index].toFixed(2) + "</li>";
+            }
+        }
+        return times;
+    }
+
+    showsNext() {
+        var date = new Date();
+        var time = date.getTime;
+
+    }
+
+    showStops(index) {
         this.routeNameDOM.innerHTML = this.name;
-        this.stopDom.innerHTML = this.busStops[index];
+        this.stopsDOM.innerHTML = this.stops[index];
         this.createMarker(index);
-
-
+         this.timesDOM.innerHTML = this.getTimes(index);
     }
 
     createMarker(index) {
@@ -54,14 +95,14 @@ class Bus {
             this.marker = null;
         }
         var stopPosition = this.stopPositions[index];
-        var stopName = this.busStops[index];
+        var stopName = this.stops[index];
         this.marker = new google.maps.Marker({
             map: map,
             position: stopPosition,
             title: stopName
         });
 
-        map.setCentre(stopPosition);
+        map.setCenter (stopPosition);
         map.setZoom(15);
     }
 }
