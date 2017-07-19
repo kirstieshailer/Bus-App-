@@ -25,9 +25,29 @@ class Bus {
 
         this.routeNameDOM = document.getElementById("route");
         this.stopsDOM = document.getElementById("stops");
+        this.nextDOM = document.getElementById("next");
         this.timesDOM = document.getElementById("times");
     }
 
+    getDay() {
+        var date = new Date();
+        var day = date.getDay();
+
+        if (day == 1 || day == 2 || day == 3 || day == 4) {
+         day =  this.monFriTimes;
+        } else if (day == 5) {
+            var friO = [];
+            friO = this.friTimes
+            var fri = [];
+            fri = this.monFriTimes
+            var day =  fri.concat(friO);
+        }else if (day == 6) {
+            var day = this.satTimes;
+        }else {
+            var day = this.sunTimes;
+        }
+    return day;
+    }
     //function that inserts content into DOM
 
 
@@ -41,29 +61,8 @@ class Bus {
     }
 
     getTimes(index) {
-
         var times = '';
-
-        var date = new Date();
-//        var day = date.getDay();
-        var day = 5;
-
-        if (day == 1 || day == 2 || day == 3 || day == 4) {
-         day =  this.monFriTimes;
-        } else if (day == 5) {
-            var friO = [];
-            friO = this.friTimes
-
-            var fri = [];
-            fri = this.monFriTimes
-
-            var day =  fri.concat(friO);
-            console.log(day)
-        }else if (day == 6) {
-            var day = this.satTimes;
-        }else {
-            var day = this.sunTimes;
-        }
+        var day = this.getDay()
 
         for (var i = 0; i < day.length; i++) {
             if (day[i][index] == null || day[i][index] == undefined){
@@ -76,17 +75,29 @@ class Bus {
         return times;
     }
 
-    showsNext() {
+    showNext(index) {
+        var day = this.getDay()
         var date = new Date();
-        var time = date.getTime;
+        var h = date.getHours()
+        var m = date.getMinutes()
+        var time = h + "." + m
 
+        for (var i = 0; i < day.length; i++) {
+            if (time < day[i][index]) {
+                var next = day[i][index].toFixed(2)
+                return next
+            }
+        }
+        nextDOM = next
     }
 
     showStops(index) {
         this.routeNameDOM.innerHTML = this.name;
         this.stopsDOM.innerHTML = this.stops[index];
         this.createMarker(index);
-         this.timesDOM.innerHTML = this.getTimes(index);
+        this.timesDOM.innerHTML = this.getTimes(index);
+        this.nextDOM.innerHTML = this.showNext(index)
+
     }
 
     createMarker(index) {
