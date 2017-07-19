@@ -88,7 +88,7 @@ class Bus {
                 return next
             }
         }
-        nextDOM = next
+        this.nextDOM = next
     }
 
     showStops(index) {
