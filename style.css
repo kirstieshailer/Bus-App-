@@ -57,12 +57,6 @@
         text-decoration: underline;
         color: black;
     }
-/*adjusts the size of the places where you write your input and adjusts the font size of the writing that will be entered*/
-    input {
-        height: 5vw;
-        width: 17vw;
-        font-size: 3vw;
-    }
 /*takes away the border of the whole table and makes the table be spread across the entire page*/
     table {
         border-collapse: collapse;
@@ -109,40 +103,6 @@
     }
     #bus {
         width: 99vw;
-    }
-/*Makes it so that the images are not seen when in the web version of the app*/
-    #search, #pinpoint {display:none;}
-/*adjusts the content in the div classes so that they are aligned correctly*/
-    .from {
-        display: flex;
-        width: 50vw;
-        justify-content: center;
-        align-items: center;
-    }
-    .to {
-        display: flex;
-        width: 50vw;
-        justify-content: center;
-        align-items: center;
-        padding-left: 5vw
-    }
-    .to-from {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .box {
-        width: 50vw;
-        height: 22vw;
-        text-align: center;
-    }
-
-    .routes {
-        background-color: white;
-        height: 135vw;
-        display: flex;
-        flex-wrap: wrap;
     }
 /*Makes the image/text not display itn the display whilst in the web version*/
     .announcements1, .bus-logo1 {display:none;}
@@ -209,12 +169,7 @@
     a:hover {
         text-decoration: underline;
     }
-/*adjusts the size of the places where you write your input and adjusts the font size of the writing that will be entered*/
-    input {
-        height: 5vw;
-        width: 50vw;
-        font-size: 3vw;
-    }
+
 /*Makes the navigation bar be grouped together so it is all aligned, aligns all the text to be center changed the background colour to the lime green*/
     nav {
         display:flex;
@@ -255,10 +210,6 @@
     #map {
         width: 96vw;
     }
-     #search, #pinpoint {
-        height: 10vw;
-        padding-left:2vw;
-    }
     #bus-logo {
         width: 50vw;
     }
@@ -269,38 +220,6 @@
     #bus {
         display: none;
     }
-/*adjusts the content in the div classes so that they are aligned correctly*/
-    .from {
-        display: flex;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-    }
-    .to {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: center;
-         align-items: center;
-    }
-    .box {
-        width: 100vw;
-        height: 22vw;
-        text-align: center;
-        background-color: #c1d72f
-    }
-    .inner-bottom {
-        height: 1000vw;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .routes {
-        background-color: white;
-        height: 260vw;
-        display: flex;
-        flex-wrap: wrap;
-    }
 /*Makes the image/text not display itn the display whilst in the mobile version*/
     .announcements2, .bus-logo2 {display:none;}
     .announcements1, .bus-logo1 {
@@ -308,12 +227,6 @@
         text-align: center;
         width: 100vw;
     }
-    .add-new {
-        background-color: #c1d72f;
-        display: flex;
-        justify-content: space-between
-    }
-
 }
 
 
@@ -324,7 +237,7 @@
     width: 100vw
 }
 .fare-information, .urban-bus, .faq {border: solid 1px #c1d72f;}
-/*sets the background colour of all routes to be the correct colour to the corosponding route according to Horizens information*/
+/*sets the background colour of all routes to be the correct colour to the corosponding route according to Horizens information, as well as the height and text size etc*/
 #awapuni {
     background-color: #F69238;
     height:10vw;
@@ -422,7 +335,7 @@
     font-size: 3vw;
 }
 
-/*afjusts the font size of the footer to be small and the content to be in the center of the page also spaced down from the other content on the page.*/
+/*adjusts the font size of the footer to be small and the content to be in the center of the page also spaced down from the other content on the page.*/
 footer {
     font-size: 10px;
     text-align: center;
@@ -442,15 +355,6 @@ main {
     flex-wrap: wrap;
     cursor: pointer;
     justify-content: center;
-}
-.stopLi {
-    list-style-type: none;
-}
-.titleLi {
-    list-style-type: none;
-}
-.timesLi {
-    list-style-type: none
 }
 #map {
     background: blue;
