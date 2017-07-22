@@ -121,6 +121,11 @@ class Bus {
 //Returns the next variable to display
                 return next
             }
+//else statement so that if there is no more busses sceduled for the day it will let you know
+            else {
+                var next = "Sorry no more busses for today"
+                return next
+            }
         }
 //Displays the next variable from the function in the correct place in the HTML
         this.nextDOM = next
