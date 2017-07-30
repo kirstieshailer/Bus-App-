@@ -1,18 +1,4 @@
 var data = {
-    colors: {
-        awapuni: "#f69238",
-        rugby: "#009e57",
-        highbury: "#00aeef",
-        takaro: "#ee1b2d",
-        cloverlea: "#873c96",
-        milson: "#ef59a1",
-        rhodes: "#0153a0",
-        roslyn: "#c6870e",
-        rangiora: "#005040",
-        brightwater: "#fbb555",
-        fernlea: "#008b98",
-        heights: "#f0563b"
-    },
     stops: {
         awapuni: [
             "Depart MST",

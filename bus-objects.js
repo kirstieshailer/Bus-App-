@@ -51,15 +51,15 @@ class Bus {
 //Adds the friday times from the monFriTimes array
             fri = this.monFriTimes
 //Joins the two arrays together do it shows in one array
-            var day =  fri.concat(friO);
+            day =  fri.concat(friO);
 //else if statement for the saturday times
         }else if (day == 6) {
 //changes the day variable to display the saturday times
-            var day = this.satTimes;
+            day = this.satTimes;
 //else statement that will show the sunday times as the array only shows from sunday to saturday
         }else {
 //changes the day variable to display the sunday times
-            var day = this.sunTimes;
+            day = this.sunTimes;
         }
 //holds the day as new variable that can be used later
     return day;
@@ -199,7 +199,7 @@ $(document).ready(function(){
         lng: 175.610062
     };
     //Create a new Map object
-//setting the map on reload to sentre at the square with a zoom
+//setting the map on reload to centre at the square with a zoom
     window.map = new google.maps.Map (document.getElementById('map'), {
         center: theSquare,
         zoom: 13
